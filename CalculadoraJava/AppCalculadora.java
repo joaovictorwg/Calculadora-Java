@@ -7,9 +7,10 @@ public class AppCalculadora{
         
         Scanner scanner = new Scanner(System.in);
 
-        /*Soma implementada 
+        /*Soma implementada ok
          *Subtracao Implentada ok
          Multiplicação Implementada ok
+         Divisão Implementada ok
          */
 
         String opc = " ";
@@ -19,7 +20,7 @@ public class AppCalculadora{
             System.out.println("----------------------------------------------------------------");
             System.out.println("------------------------Calculadora-----------------------------");
 
-            System.out.println("Digite: \n1 - Para realizar uma soma\n2 - Para realizar uma subtração\n3 - Para realizar uma multiplicação");
+            System.out.println("Digite: \n1 - Para realizar uma soma\n2 - Para realizar uma subtração\n3 - Para realizar uma multiplicação\n4 - para realizar uma divisão");
             int opc2 = scanner.nextInt();
 
             switch (opc2) {
@@ -56,6 +57,16 @@ public class AppCalculadora{
 
                     System.out.println("O resultado da multiplicação entre " +m1+ " x " +m2+ " é igual a "+multi);
                     break;
+                case 4: 
+                    System.out.println("Insira um numero: \n");
+                    float d1 = scanner.nextFloat();
+
+                    System.out.println("Insira outro numero: \n");
+                    float d2 = scanner.nextFloat();
+
+                    float div = d1/d2;
+
+                    System.out.println("O resultado da divisão entre "+d1+" / "+d2+" é igual a "+div);
                 default:
                     break;
             }
@@ -66,6 +77,8 @@ public class AppCalculadora{
             opc = scanner.nextLine();
 
         }while(opc.equals("sim"));
+
+        System.out.println("Fim do Funcionamento da Calculadora Java, obrigado por utilizar :)");
 
     }
 }
