@@ -7,7 +7,9 @@ public class AppCalculadora{
         
         Scanner scanner = new Scanner(System.in);
 
-        /*Soma implementada */
+        /*Soma implementada 
+         *Subtracao Implentada ok
+         */
 
         String opc = " ";
 
@@ -16,7 +18,7 @@ public class AppCalculadora{
             System.out.println("----------------------------------------------------------------");
             System.out.println("------------------------Calculadora-----------------------------");
 
-            System.out.println("Digite: \n1 - Para realizar uma soma\n");
+            System.out.println("Digite: \n1 - Para realizar uma soma\n2 - Para realizar uma subtração");
             int opc2 = scanner.nextInt();
 
             switch (opc2) {
@@ -31,7 +33,17 @@ public class AppCalculadora{
 
                     System.out.println("O resultado da some entre " +s1+ " + " +s2+ " é igual a "+soma);
                     break;
-                
+                case 2: 
+                    System.out.println("Insira um numero: \n");
+                    float n1 = scanner.nextFloat();
+
+                    System.out.println("Insira o outro numero: \n");
+                    float n2 = scanner.nextFloat();
+
+                    float sub = n1 - n2;
+
+                    System.out.println("O resultado da subtração entre " +n1+ " + " +n2+ " é igual a "+sub);
+                    break;
                 default:
                     break;
             }
