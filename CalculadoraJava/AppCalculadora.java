@@ -9,6 +9,7 @@ public class AppCalculadora{
 
         /*Soma implementada 
          *Subtracao Implentada ok
+         Multiplicação Implementada ok
          */
 
         String opc = " ";
@@ -18,7 +19,7 @@ public class AppCalculadora{
             System.out.println("----------------------------------------------------------------");
             System.out.println("------------------------Calculadora-----------------------------");
 
-            System.out.println("Digite: \n1 - Para realizar uma soma\n2 - Para realizar uma subtração");
+            System.out.println("Digite: \n1 - Para realizar uma soma\n2 - Para realizar uma subtração\n3 - Para realizar uma multiplicação");
             int opc2 = scanner.nextInt();
 
             switch (opc2) {
@@ -43,6 +44,17 @@ public class AppCalculadora{
                     float sub = n1 - n2;
 
                     System.out.println("O resultado da subtração entre " +n1+ " + " +n2+ " é igual a "+sub);
+                    break;
+                case 3: 
+                    System.out.println("Insira um numero: \n");
+                    float m1 = scanner.nextFloat();
+
+                    System.out.println("Insira outro numero: \n");
+                    float m2 = scanner.nextFloat();
+
+                    float multi = m1 * m2;
+
+                    System.out.println("O resultado da multiplicação entre " +m1+ " x " +m2+ " é igual a "+multi);
                     break;
                 default:
                     break;
